@@ -1,4 +1,14 @@
 const TOKEN = "MTE0MjkyMTU2NzA4MTM0MTAzOA.GXO_5L.Gpj0VNBL3av7pDibnErdYOAOp0HWtCkgWJL9l4"
+const secret = process.env['TOKEN']
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('OK');
+});
+server.listen(5000);
+
+
 const {
   Client,
   GatewayIntentBits,
