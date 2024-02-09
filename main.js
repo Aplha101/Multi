@@ -1,4 +1,5 @@
 const TOKEN = "MTE0MjkyMTU2NzA4MTM0MTAzOA.GXO_5L.Gpj0VNBL3av7pDibnErdYOAOp0HWtCkgWJL9l4"
+console.log("this works")
 const secret = process.env['TOKEN']
 
 const {
